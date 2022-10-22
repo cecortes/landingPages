@@ -7,6 +7,7 @@
   --color-pri: #374048;
   --color-sec: #8a9095;
   --color-ter: #c3cbd1;
+  --color-border: #e9eef2;
   --color-blue: #0084ff;
   --color-blue-light: #99ceff;
   --color-hover: #333;
@@ -21,4 +22,6 @@
 body {
   font-family: var(--font);
   background-color: #f5f5f5;
+  width: 100vw;
+  overflow: hidden;
 }
