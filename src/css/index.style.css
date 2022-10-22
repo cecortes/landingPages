@@ -4,6 +4,12 @@
 /** Root **/
 :root {
   --font: "Poppins", sans-serif;
+  --color-pri: #374048;
+  --color-sec: #8a9095;
+  --color-ter: #c3cbd1;
+  --color-blue: #0084ff;
+  --color-blue-light: #99ceff;
+  --color-hover: #333;
 }
 
 * {
