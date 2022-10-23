@@ -10,6 +10,7 @@
   --color-border: #e9eef2;
   --color-blue: #0084ff;
   --color-blue-light: #99ceff;
+  --color-gray: #969da3;
   --color-orange: #ff6622;
   --color-hover: #333;
 }
@@ -119,12 +120,101 @@ body {
   background-color: var(--color-hover);
 }
 
+/** Demos **/
+.main__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  padding: 0 15px;
+  background-color: white;
+  margin: 80px auto;
+}
+
+.main_header {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.main_header h2 {
+  font-size: 30px;
+  font-weight: 500;
+  font-stretch: normal;
+  line-height: 29px;
+  padding-top: 5px;
+  margin-bottom: 15px;
+  color: var(--color-pri);
+  text-transform: uppercase;
+  margin: 80px 0 25px;
+}
+
+.main_header p {
+  color: var(--color-gray);
+  font-size: 16px;
+  font-weight: 300;
+  margin: 0 auto 20px;
+}
+
+.main_header::after {
+  content: "";
+  display: block;
+  width: 82px;
+  height: 6px;
+  background-color: var(--color-border);
+  margin: 0 auto;
+}
+
+.cards_grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 330px;
+  /* height: 400px; */
+  background-color: white;
+  /* box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1); */
+  margin: 0 0 80px;
+  transition: all 0.5s ease-in-out;
+}
+
+.card a {
+  text-decoration: none;
+  color: var(--color-blue);
+}
+
+.card a img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+.card a h3 {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.1;
+  margin: 20px auto 10px;
+  text-align: center;
+}
+
+/** Small Screens **/
 @media screen and (min-width: 460px) {
   .btn-sec {
     margin-bottom: 15px;
   }
 }
 
+/** Medium Screens **/
 @media screen and (min-width: 768px) {
   .text_container h2 {
     margin-bottom: 20px;
@@ -137,6 +227,7 @@ body {
   }
 }
 
+/** Large Screens **/
 @media screen and (min-width: 991px) {
   .text_container h2 {
     font-size: 68px;
@@ -162,6 +253,7 @@ body {
   }
 }
 
+/** Extra Large Screens **/
 @media screen and (min-width: 1200px) {
   .text_container h2 {
     font-size: 79px;
