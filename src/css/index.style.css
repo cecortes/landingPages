@@ -239,7 +239,64 @@ body {
   background-color: var(--color-blue-light);
   color: var(--color-white);
   border-radius: 50%;
-  transition: all 0.5s ease-in-out;
+  transition: color 0.5s ease-in-out;
+}
+
+/** Pseudo Class for Animations **/
+[element-inView] {
+  opacity: 0;
+}
+
+[element-inView]:nth-child(1) {
+  transition: all 0.4s ease-in-out;
+}
+
+[element-inView]:nth-child(2) {
+  transition: all 0.6s ease-in-out;
+}
+
+[element-inView]:nth-child(3) {
+  transition: all 0.8s ease-in-out;
+}
+
+[element-inView]:nth-child(4) {
+  transition: all 1s ease-in-out;
+}
+
+[element-inView]:nth-child(5) {
+  transition: all 1.2s ease-in-out;
+}
+
+[element-inView]:nth-child(6) {
+  transition: all 1.4s ease-in-out;
+}
+
+[element-inView="fadeInUp"] {
+  transform: translate3d(-25%, 100%, 0);
+}
+
+[element-inView="fadeInUp"].is-inViewport {
+  opacity: 1;
+  transform: none;
+}
+
+[element-inView="fadeIn"] {
+  opacity: 1;
+}
+
+[element-inView="fadeIn"].is-inViewport {
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 50%, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
 }
 
 .footer_link:hover {
